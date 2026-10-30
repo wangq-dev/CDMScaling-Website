@@ -1,0 +1,1680 @@
+{
+  "provenance": {
+    "notebook": "fit_law_across_32_LLM_backbones.ipynb",
+    "notebookSha256": "c539d7c3fcae41da4e5527aea7f4525e21b1fdcd3611059256f44957aae7a577",
+    "components": 12,
+    "explainedVariance": 0.9569506037906392,
+    "method": "Frozen notebook PCA direction; constrained least-squares refits of A, B0, Bm, P0.",
+    "roundedNotebookWeights": true
+  },
+  "baseline": {
+    "A": 0.23397418371812623,
+    "B0": 0.01542865049668625,
+    "Bm": 0.0092283959090509,
+    "P0": 0.4340400768028566,
+    "trainMae": 0.012872119938918312,
+    "holdoutMae": 0.012263599596628122
+  },
+  "models": [
+    {
+      "id": "Qwen3-0.6B",
+      "family": "Qwen3",
+      "size": 0.6,
+      "variant": "Instruct",
+      "holdout": false,
+      "s": -0.14283035183518517,
+      "points": [
+        {
+          "step": 3000,
+          "tokens": 12.582912,
+          "accuracy": 0.4347
+        },
+        {
+          "step": 6000,
+          "tokens": 25.165824,
+          "accuracy": 0.4424
+        },
+        {
+          "step": 9000,
+          "tokens": 37.748736,
+          "accuracy": 0.4562
+        },
+        {
+          "step": 12000,
+          "tokens": 50.331648,
+          "accuracy": 0.4646
+        },
+        {
+          "step": 15000,
+          "tokens": 62.91456,
+          "accuracy": 0.4694
+        },
+        {
+          "step": 18000,
+          "tokens": 75.497472,
+          "accuracy": 0.4727
+        },
+        {
+          "step": 21000,
+          "tokens": 88.080384,
+          "accuracy": 0.4767
+        },
+        {
+          "step": 24000,
+          "tokens": 100.663296,
+          "accuracy": 0.4788
+        }
+      ]
+    },
+    {
+      "id": "Qwen3-0.6B-Base",
+      "family": "Qwen3",
+      "size": 0.6,
+      "variant": "Base",
+      "holdout": false,
+      "s": -0.273352943591504,
+      "points": [
+        {
+          "step": 3000,
+          "tokens": 12.582912,
+          "accuracy": 0.4379
+        },
+        {
+          "step": 6000,
+          "tokens": 25.165824,
+          "accuracy": 0.4425
+        },
+        {
+          "step": 9000,
+          "tokens": 37.748736,
+          "accuracy": 0.451
+        },
+        {
+          "step": 12000,
+          "tokens": 50.331648,
+          "accuracy": 0.45899999999999996
+        },
+        {
+          "step": 15000,
+          "tokens": 62.91456,
+          "accuracy": 0.4656
+        },
+        {
+          "step": 18000,
+          "tokens": 75.497472,
+          "accuracy": 0.4696
+        },
+        {
+          "step": 21000,
+          "tokens": 88.080384,
+          "accuracy": 0.4717
+        },
+        {
+          "step": 24000,
+          "tokens": 100.663296,
+          "accuracy": 0.4718
+        }
+      ]
+    },
+    {
+      "id": "Falcon3-1B-Instruct",
+      "family": "Falcon3",
+      "size": 1.0,
+      "variant": "Instruct",
+      "holdout": false,
+      "s": -0.333925194978944,
+      "points": [
+        {
+          "step": 3000,
+          "tokens": 12.582912,
+          "accuracy": 0.3925
+        },
+        {
+          "step": 6000,
+          "tokens": 25.165824,
+          "accuracy": 0.3968
+        },
+        {
+          "step": 9000,
+          "tokens": 37.748736,
+          "accuracy": 0.4072
+        },
+        {
+          "step": 12000,
+          "tokens": 50.331648,
+          "accuracy": 0.4133
+        },
+        {
+          "step": 15000,
+          "tokens": 62.91456,
+          "accuracy": 0.4189
+        },
+        {
+          "step": 18000,
+          "tokens": 75.497472,
+          "accuracy": 0.4233
+        },
+        {
+          "step": 21000,
+          "tokens": 88.080384,
+          "accuracy": 0.424
+        },
+        {
+          "step": 24000,
+          "tokens": 100.663296,
+          "accuracy": 0.4249
+        }
+      ]
+    },
+    {
+      "id": "Falcon3-1B-Base",
+      "family": "Falcon3",
+      "size": 1.0,
+      "variant": "Base",
+      "holdout": false,
+      "s": -0.3570048148912736,
+      "points": [
+        {
+          "step": 3000,
+          "tokens": 12.582912,
+          "accuracy": 0.39159999999999995
+        },
+        {
+          "step": 6000,
+          "tokens": 25.165824,
+          "accuracy": 0.3921
+        },
+        {
+          "step": 9000,
+          "tokens": 37.748736,
+          "accuracy": 0.3994
+        },
+        {
+          "step": 12000,
+          "tokens": 50.331648,
+          "accuracy": 0.4047
+        },
+        {
+          "step": 15000,
+          "tokens": 62.91456,
+          "accuracy": 0.4177
+        },
+        {
+          "step": 18000,
+          "tokens": 75.497472,
+          "accuracy": 0.423
+        },
+        {
+          "step": 21000,
+          "tokens": 88.080384,
+          "accuracy": 0.4219
+        },
+        {
+          "step": 24000,
+          "tokens": 100.663296,
+          "accuracy": 0.4169
+        }
+      ]
+    },
+    {
+      "id": "Llama-3.2-1B-Instruct",
+      "family": "Llama-3.2",
+      "size": 1.0,
+      "variant": "Instruct",
+      "holdout": false,
+      "s": -0.3094475969131999,
+      "points": [
+        {
+          "step": 3000,
+          "tokens": 12.582912,
+          "accuracy": 0.4191
+        },
+        {
+          "step": 6000,
+          "tokens": 25.165824,
+          "accuracy": 0.42340000000000005
+        },
+        {
+          "step": 9000,
+          "tokens": 37.748736,
+          "accuracy": 0.43229999999999996
+        },
+        {
+          "step": 12000,
+          "tokens": 50.331648,
+          "accuracy": 0.4346
+        },
+        {
+          "step": 15000,
+          "tokens": 62.91456,
+          "accuracy": 0.4355
+        },
+        {
+          "step": 18000,
+          "tokens": 75.497472,
+          "accuracy": 0.43560000000000004
+        },
+        {
+          "step": 21000,
+          "tokens": 88.080384,
+          "accuracy": 0.44229999999999997
+        },
+        {
+          "step": 24000,
+          "tokens": 100.663296,
+          "accuracy": 0.4462
+        }
+      ]
+    },
+    {
+      "id": "Llama-3.2-1B",
+      "family": "Llama-3.2",
+      "size": 1.0,
+      "variant": "Base",
+      "holdout": false,
+      "s": -0.369424863862967,
+      "points": [
+        {
+          "step": 3000,
+          "tokens": 12.582912,
+          "accuracy": 0.4047
+        },
+        {
+          "step": 6000,
+          "tokens": 25.165824,
+          "accuracy": 0.4122
+        },
+        {
+          "step": 9000,
+          "tokens": 37.748736,
+          "accuracy": 0.4233
+        },
+        {
+          "step": 12000,
+          "tokens": 50.331648,
+          "accuracy": 0.4289
+        },
+        {
+          "step": 15000,
+          "tokens": 62.91456,
+          "accuracy": 0.4335
+        },
+        {
+          "step": 18000,
+          "tokens": 75.497472,
+          "accuracy": 0.43920000000000003
+        },
+        {
+          "step": 21000,
+          "tokens": 88.080384,
+          "accuracy": 0.4435
+        },
+        {
+          "step": 24000,
+          "tokens": 100.663296,
+          "accuracy": 0.4448
+        }
+      ]
+    },
+    {
+      "id": "Qwen3-1.7B",
+      "family": "Qwen3",
+      "size": 1.7,
+      "variant": "Instruct",
+      "holdout": false,
+      "s": 0.026213212276027114,
+      "points": [
+        {
+          "step": 3000,
+          "tokens": 12.582912,
+          "accuracy": 0.4802
+        },
+        {
+          "step": 6000,
+          "tokens": 25.165824,
+          "accuracy": 0.48119999999999996
+        },
+        {
+          "step": 9000,
+          "tokens": 37.748736,
+          "accuracy": 0.49329999999999996
+        },
+        {
+          "step": 12000,
+          "tokens": 50.331648,
+          "accuracy": 0.4997
+        },
+        {
+          "step": 15000,
+          "tokens": 62.91456,
+          "accuracy": 0.5091
+        },
+        {
+          "step": 18000,
+          "tokens": 75.497472,
+          "accuracy": 0.5102
+        },
+        {
+          "step": 21000,
+          "tokens": 88.080384,
+          "accuracy": 0.5093
+        },
+        {
+          "step": 24000,
+          "tokens": 100.663296,
+          "accuracy": 0.5081
+        }
+      ]
+    },
+    {
+      "id": "Qwen3-1.7B-Base",
+      "family": "Qwen3",
+      "size": 1.7,
+      "variant": "Base",
+      "holdout": false,
+      "s": -0.06947229897694357,
+      "points": [
+        {
+          "step": 3000,
+          "tokens": 12.582912,
+          "accuracy": 0.4606
+        },
+        {
+          "step": 6000,
+          "tokens": 25.165824,
+          "accuracy": 0.46380000000000005
+        },
+        {
+          "step": 9000,
+          "tokens": 37.748736,
+          "accuracy": 0.47729999999999995
+        },
+        {
+          "step": 12000,
+          "tokens": 50.331648,
+          "accuracy": 0.48090000000000005
+        },
+        {
+          "step": 15000,
+          "tokens": 62.91456,
+          "accuracy": 0.4858
+        },
+        {
+          "step": 18000,
+          "tokens": 75.497472,
+          "accuracy": 0.4842
+        },
+        {
+          "step": 21000,
+          "tokens": 88.080384,
+          "accuracy": 0.4844
+        },
+        {
+          "step": 24000,
+          "tokens": 100.663296,
+          "accuracy": 0.4841
+        }
+      ]
+    },
+    {
+      "id": "gemma-2-2b-it",
+      "family": "Gemma-2",
+      "size": 2.0,
+      "variant": "Instruct",
+      "holdout": false,
+      "s": -0.04200207894862601,
+      "points": [
+        {
+          "step": 3000,
+          "tokens": 12.582912,
+          "accuracy": 0.45030000000000003
+        },
+        {
+          "step": 6000,
+          "tokens": 25.165824,
+          "accuracy": 0.4498
+        },
+        {
+          "step": 9000,
+          "tokens": 37.748736,
+          "accuracy": 0.46649999999999997
+        },
+        {
+          "step": 12000,
+          "tokens": 50.331648,
+          "accuracy": 0.4793
+        },
+        {
+          "step": 15000,
+          "tokens": 62.91456,
+          "accuracy": 0.4997
+        },
+        {
+          "step": 18000,
+          "tokens": 75.497472,
+          "accuracy": 0.5032
+        },
+        {
+          "step": 21000,
+          "tokens": 88.080384,
+          "accuracy": 0.5085999999999999
+        },
+        {
+          "step": 24000,
+          "tokens": 100.663296,
+          "accuracy": 0.5081
+        }
+      ]
+    },
+    {
+      "id": "gemma-2-2b",
+      "family": "Gemma-2",
+      "size": 2.0,
+      "variant": "Base",
+      "holdout": false,
+      "s": -0.12306215794608771,
+      "points": [
+        {
+          "step": 3000,
+          "tokens": 12.582912,
+          "accuracy": 0.4507
+        },
+        {
+          "step": 6000,
+          "tokens": 25.165824,
+          "accuracy": 0.4604
+        },
+        {
+          "step": 9000,
+          "tokens": 37.748736,
+          "accuracy": 0.4792
+        },
+        {
+          "step": 12000,
+          "tokens": 50.331648,
+          "accuracy": 0.4864
+        },
+        {
+          "step": 15000,
+          "tokens": 62.91456,
+          "accuracy": 0.4943
+        },
+        {
+          "step": 18000,
+          "tokens": 75.497472,
+          "accuracy": 0.49700000000000005
+        },
+        {
+          "step": 21000,
+          "tokens": 88.080384,
+          "accuracy": 0.5013000000000001
+        },
+        {
+          "step": 24000,
+          "tokens": 100.663296,
+          "accuracy": 0.5003
+        }
+      ]
+    },
+    {
+      "id": "Falcon3-3B-Instruct",
+      "family": "Falcon3",
+      "size": 3.0,
+      "variant": "Instruct",
+      "holdout": false,
+      "s": -0.11998212996900418,
+      "points": [
+        {
+          "step": 3000,
+          "tokens": 12.582912,
+          "accuracy": 0.46159999999999995
+        },
+        {
+          "step": 6000,
+          "tokens": 25.165824,
+          "accuracy": 0.46520000000000006
+        },
+        {
+          "step": 9000,
+          "tokens": 37.748736,
+          "accuracy": 0.4727
+        },
+        {
+          "step": 12000,
+          "tokens": 50.331648,
+          "accuracy": 0.4765
+        },
+        {
+          "step": 15000,
+          "tokens": 62.91456,
+          "accuracy": 0.4813
+        },
+        {
+          "step": 18000,
+          "tokens": 75.497472,
+          "accuracy": 0.48210000000000003
+        },
+        {
+          "step": 21000,
+          "tokens": 88.080384,
+          "accuracy": 0.4839
+        },
+        {
+          "step": 24000,
+          "tokens": 100.663296,
+          "accuracy": 0.4824
+        }
+      ]
+    },
+    {
+      "id": "Falcon3-3B-Base",
+      "family": "Falcon3",
+      "size": 3.0,
+      "variant": "Base",
+      "holdout": false,
+      "s": -0.17771810747597935,
+      "points": [
+        {
+          "step": 3000,
+          "tokens": 12.582912,
+          "accuracy": 0.45520000000000005
+        },
+        {
+          "step": 6000,
+          "tokens": 25.165824,
+          "accuracy": 0.45770000000000005
+        },
+        {
+          "step": 9000,
+          "tokens": 37.748736,
+          "accuracy": 0.4653
+        },
+        {
+          "step": 12000,
+          "tokens": 50.331648,
+          "accuracy": 0.4685
+        },
+        {
+          "step": 15000,
+          "tokens": 62.91456,
+          "accuracy": 0.47609999999999997
+        },
+        {
+          "step": 18000,
+          "tokens": 75.497472,
+          "accuracy": 0.47659999999999997
+        },
+        {
+          "step": 21000,
+          "tokens": 88.080384,
+          "accuracy": 0.4781
+        },
+        {
+          "step": 24000,
+          "tokens": 100.663296,
+          "accuracy": 0.47450000000000003
+        }
+      ]
+    },
+    {
+      "id": "Llama-3.2-3B-Instruct",
+      "family": "Llama-3.2",
+      "size": 3.0,
+      "variant": "Instruct",
+      "holdout": false,
+      "s": -0.016449255693849887,
+      "points": [
+        {
+          "step": 3000,
+          "tokens": 12.582912,
+          "accuracy": 0.4806
+        },
+        {
+          "step": 6000,
+          "tokens": 25.165824,
+          "accuracy": 0.48340000000000005
+        },
+        {
+          "step": 9000,
+          "tokens": 37.748736,
+          "accuracy": 0.48979999999999996
+        },
+        {
+          "step": 12000,
+          "tokens": 50.331648,
+          "accuracy": 0.4925
+        },
+        {
+          "step": 15000,
+          "tokens": 62.91456,
+          "accuracy": 0.491
+        },
+        {
+          "step": 18000,
+          "tokens": 75.497472,
+          "accuracy": 0.4851
+        },
+        {
+          "step": 21000,
+          "tokens": 88.080384,
+          "accuracy": 0.47659999999999997
+        },
+        {
+          "step": 24000,
+          "tokens": 100.663296,
+          "accuracy": 0.4727
+        }
+      ]
+    },
+    {
+      "id": "Llama-3.2-3B",
+      "family": "Llama-3.2",
+      "size": 3.0,
+      "variant": "Base",
+      "holdout": false,
+      "s": -0.1299864580449694,
+      "points": [
+        {
+          "step": 3000,
+          "tokens": 12.582912,
+          "accuracy": 0.4673
+        },
+        {
+          "step": 6000,
+          "tokens": 25.165824,
+          "accuracy": 0.473
+        },
+        {
+          "step": 9000,
+          "tokens": 37.748736,
+          "accuracy": 0.4875
+        },
+        {
+          "step": 12000,
+          "tokens": 50.331648,
+          "accuracy": 0.49340000000000006
+        },
+        {
+          "step": 15000,
+          "tokens": 62.91456,
+          "accuracy": 0.502
+        },
+        {
+          "step": 18000,
+          "tokens": 75.497472,
+          "accuracy": 0.5021
+        },
+        {
+          "step": 21000,
+          "tokens": 88.080384,
+          "accuracy": 0.5008
+        },
+        {
+          "step": 24000,
+          "tokens": 100.663296,
+          "accuracy": 0.496
+        }
+      ]
+    },
+    {
+      "id": "Qwen3-4B",
+      "family": "Qwen3",
+      "size": 4.0,
+      "variant": "Instruct",
+      "holdout": false,
+      "s": 0.23728390424696286,
+      "points": [
+        {
+          "step": 3000,
+          "tokens": 12.582912,
+          "accuracy": 0.5015
+        },
+        {
+          "step": 6000,
+          "tokens": 25.165824,
+          "accuracy": 0.4949
+        },
+        {
+          "step": 9000,
+          "tokens": 37.748736,
+          "accuracy": 0.4996
+        },
+        {
+          "step": 12000,
+          "tokens": 50.331648,
+          "accuracy": 0.5015
+        },
+        {
+          "step": 15000,
+          "tokens": 62.91456,
+          "accuracy": 0.5095000000000001
+        },
+        {
+          "step": 18000,
+          "tokens": 75.497472,
+          "accuracy": 0.5072
+        },
+        {
+          "step": 21000,
+          "tokens": 88.080384,
+          "accuracy": 0.5058
+        },
+        {
+          "step": 24000,
+          "tokens": 100.663296,
+          "accuracy": 0.5059
+        }
+      ]
+    },
+    {
+      "id": "Qwen3-4B-Base",
+      "family": "Qwen3",
+      "size": 4.0,
+      "variant": "Base",
+      "holdout": false,
+      "s": 0.14552560077585158,
+      "points": [
+        {
+          "step": 3000,
+          "tokens": 12.582912,
+          "accuracy": 0.5033
+        },
+        {
+          "step": 6000,
+          "tokens": 25.165824,
+          "accuracy": 0.5044
+        },
+        {
+          "step": 9000,
+          "tokens": 37.748736,
+          "accuracy": 0.5074000000000001
+        },
+        {
+          "step": 12000,
+          "tokens": 50.331648,
+          "accuracy": 0.5097
+        },
+        {
+          "step": 15000,
+          "tokens": 62.91456,
+          "accuracy": 0.5126
+        },
+        {
+          "step": 18000,
+          "tokens": 75.497472,
+          "accuracy": 0.5121
+        },
+        {
+          "step": 21000,
+          "tokens": 88.080384,
+          "accuracy": 0.5133
+        },
+        {
+          "step": 24000,
+          "tokens": 100.663296,
+          "accuracy": 0.5122
+        }
+      ]
+    },
+    {
+      "id": "deepseek-llm-7b-chat",
+      "family": "DeepSeek",
+      "size": 7.0,
+      "variant": "Instruct",
+      "holdout": false,
+      "s": -0.1747036438670586,
+      "points": [
+        {
+          "step": 3000,
+          "tokens": 12.582912,
+          "accuracy": 0.42469999999999997
+        },
+        {
+          "step": 6000,
+          "tokens": 25.165824,
+          "accuracy": 0.4361
+        },
+        {
+          "step": 9000,
+          "tokens": 37.748736,
+          "accuracy": 0.4462
+        },
+        {
+          "step": 12000,
+          "tokens": 50.331648,
+          "accuracy": 0.4672
+        },
+        {
+          "step": 15000,
+          "tokens": 62.91456,
+          "accuracy": 0.4782
+        },
+        {
+          "step": 18000,
+          "tokens": 75.497472,
+          "accuracy": 0.48210000000000003
+        },
+        {
+          "step": 21000,
+          "tokens": 88.080384,
+          "accuracy": 0.4855
+        },
+        {
+          "step": 24000,
+          "tokens": 100.663296,
+          "accuracy": 0.48229999999999995
+        }
+      ]
+    },
+    {
+      "id": "deepseek-llm-7b-base",
+      "family": "DeepSeek",
+      "size": 7.0,
+      "variant": "Base",
+      "holdout": false,
+      "s": -0.09560607975057563,
+      "points": [
+        {
+          "step": 3000,
+          "tokens": 12.582912,
+          "accuracy": 0.44170000000000004
+        },
+        {
+          "step": 6000,
+          "tokens": 25.165824,
+          "accuracy": 0.4539
+        },
+        {
+          "step": 9000,
+          "tokens": 37.748736,
+          "accuracy": 0.47229999999999994
+        },
+        {
+          "step": 12000,
+          "tokens": 50.331648,
+          "accuracy": 0.48219999999999996
+        },
+        {
+          "step": 15000,
+          "tokens": 62.91456,
+          "accuracy": 0.4827
+        },
+        {
+          "step": 18000,
+          "tokens": 75.497472,
+          "accuracy": 0.4876
+        },
+        {
+          "step": 21000,
+          "tokens": 88.080384,
+          "accuracy": 0.4911
+        },
+        {
+          "step": 24000,
+          "tokens": 100.663296,
+          "accuracy": 0.49689999999999995
+        }
+      ]
+    },
+    {
+      "id": "deepseek-math-7b-instruct",
+      "family": "DeepSeek",
+      "size": 7.0,
+      "variant": "Instruct",
+      "holdout": false,
+      "s": -0.21450815596224032,
+      "points": [
+        {
+          "step": 3000,
+          "tokens": 12.582912,
+          "accuracy": 0.4434
+        },
+        {
+          "step": 6000,
+          "tokens": 25.165824,
+          "accuracy": 0.4439
+        },
+        {
+          "step": 9000,
+          "tokens": 37.748736,
+          "accuracy": 0.4425
+        },
+        {
+          "step": 12000,
+          "tokens": 50.331648,
+          "accuracy": 0.447
+        },
+        {
+          "step": 15000,
+          "tokens": 62.91456,
+          "accuracy": 0.45289999999999997
+        },
+        {
+          "step": 18000,
+          "tokens": 75.497472,
+          "accuracy": 0.467
+        },
+        {
+          "step": 21000,
+          "tokens": 88.080384,
+          "accuracy": 0.4764
+        },
+        {
+          "step": 24000,
+          "tokens": 100.663296,
+          "accuracy": 0.4833
+        }
+      ]
+    },
+    {
+      "id": "deepseek-math-7b-base",
+      "family": "DeepSeek",
+      "size": 7.0,
+      "variant": "Base",
+      "holdout": false,
+      "s": -0.025536767765487772,
+      "points": [
+        {
+          "step": 3000,
+          "tokens": 12.582912,
+          "accuracy": 0.4355
+        },
+        {
+          "step": 6000,
+          "tokens": 25.165824,
+          "accuracy": 0.4461
+        },
+        {
+          "step": 9000,
+          "tokens": 37.748736,
+          "accuracy": 0.45890000000000003
+        },
+        {
+          "step": 12000,
+          "tokens": 50.331648,
+          "accuracy": 0.4696
+        },
+        {
+          "step": 15000,
+          "tokens": 62.91456,
+          "accuracy": 0.4799
+        },
+        {
+          "step": 18000,
+          "tokens": 75.497472,
+          "accuracy": 0.4865
+        },
+        {
+          "step": 21000,
+          "tokens": 88.080384,
+          "accuracy": 0.4911
+        },
+        {
+          "step": 24000,
+          "tokens": 100.663296,
+          "accuracy": 0.4876
+        }
+      ]
+    },
+    {
+      "id": "Falcon3-7B-Instruct",
+      "family": "Falcon3",
+      "size": 7.0,
+      "variant": "Instruct",
+      "holdout": false,
+      "s": 0.14111367149783552,
+      "points": [
+        {
+          "step": 3000,
+          "tokens": 12.582912,
+          "accuracy": 0.5241
+        },
+        {
+          "step": 6000,
+          "tokens": 25.165824,
+          "accuracy": 0.5223
+        },
+        {
+          "step": 9000,
+          "tokens": 37.748736,
+          "accuracy": 0.5266
+        },
+        {
+          "step": 12000,
+          "tokens": 50.331648,
+          "accuracy": 0.5302
+        },
+        {
+          "step": 15000,
+          "tokens": 62.91456,
+          "accuracy": 0.535
+        },
+        {
+          "step": 18000,
+          "tokens": 75.497472,
+          "accuracy": 0.5357
+        },
+        {
+          "step": 21000,
+          "tokens": 88.080384,
+          "accuracy": 0.5375
+        },
+        {
+          "step": 24000,
+          "tokens": 100.663296,
+          "accuracy": 0.5397
+        }
+      ]
+    },
+    {
+      "id": "Falcon3-7B-Base",
+      "family": "Falcon3",
+      "size": 7.0,
+      "variant": "Base",
+      "holdout": false,
+      "s": 0.09628798629755927,
+      "points": [
+        {
+          "step": 3000,
+          "tokens": 12.582912,
+          "accuracy": 0.5222
+        },
+        {
+          "step": 6000,
+          "tokens": 25.165824,
+          "accuracy": 0.5207999999999999
+        },
+        {
+          "step": 9000,
+          "tokens": 37.748736,
+          "accuracy": 0.5217
+        },
+        {
+          "step": 12000,
+          "tokens": 50.331648,
+          "accuracy": 0.5236999999999999
+        },
+        {
+          "step": 15000,
+          "tokens": 62.91456,
+          "accuracy": 0.5276
+        },
+        {
+          "step": 18000,
+          "tokens": 75.497472,
+          "accuracy": 0.5279
+        },
+        {
+          "step": 21000,
+          "tokens": 88.080384,
+          "accuracy": 0.5307999999999999
+        },
+        {
+          "step": 24000,
+          "tokens": 100.663296,
+          "accuracy": 0.5311
+        }
+      ]
+    },
+    {
+      "id": "Mistral-7B-Instruct-v0.3",
+      "family": "Mistral",
+      "size": 7.0,
+      "variant": "Instruct",
+      "holdout": false,
+      "s": -0.0629446836694198,
+      "points": [
+        {
+          "step": 3000,
+          "tokens": 12.582912,
+          "accuracy": 0.4672
+        },
+        {
+          "step": 6000,
+          "tokens": 25.165824,
+          "accuracy": 0.47009999999999996
+        },
+        {
+          "step": 9000,
+          "tokens": 37.748736,
+          "accuracy": 0.4739
+        },
+        {
+          "step": 12000,
+          "tokens": 50.331648,
+          "accuracy": 0.47130000000000005
+        },
+        {
+          "step": 15000,
+          "tokens": 62.91456,
+          "accuracy": 0.4692
+        },
+        {
+          "step": 18000,
+          "tokens": 75.497472,
+          "accuracy": 0.4692
+        },
+        {
+          "step": 21000,
+          "tokens": 88.080384,
+          "accuracy": 0.4788
+        },
+        {
+          "step": 24000,
+          "tokens": 100.663296,
+          "accuracy": 0.48369999999999996
+        }
+      ]
+    },
+    {
+      "id": "Mistral-7B-v0.3",
+      "family": "Mistral",
+      "size": 7.0,
+      "variant": "Base",
+      "holdout": false,
+      "s": -0.020636859806244568,
+      "points": [
+        {
+          "step": 3000,
+          "tokens": 12.582912,
+          "accuracy": 0.4391
+        },
+        {
+          "step": 6000,
+          "tokens": 25.165824,
+          "accuracy": 0.4472
+        },
+        {
+          "step": 9000,
+          "tokens": 37.748736,
+          "accuracy": 0.4515
+        },
+        {
+          "step": 12000,
+          "tokens": 50.331648,
+          "accuracy": 0.4607
+        },
+        {
+          "step": 15000,
+          "tokens": 62.91456,
+          "accuracy": 0.46
+        },
+        {
+          "step": 18000,
+          "tokens": 75.497472,
+          "accuracy": 0.4628
+        },
+        {
+          "step": 21000,
+          "tokens": 88.080384,
+          "accuracy": 0.45520000000000005
+        },
+        {
+          "step": 24000,
+          "tokens": 100.663296,
+          "accuracy": 0.4522
+        }
+      ]
+    },
+    {
+      "id": "Qwen3-8B",
+      "family": "Qwen3",
+      "size": 8.0,
+      "variant": "Instruct",
+      "holdout": false,
+      "s": 0.3390553413743228,
+      "points": [
+        {
+          "step": 3000,
+          "tokens": 12.582912,
+          "accuracy": 0.5506
+        },
+        {
+          "step": 6000,
+          "tokens": 25.165824,
+          "accuracy": 0.5467
+        },
+        {
+          "step": 9000,
+          "tokens": 37.748736,
+          "accuracy": 0.5488000000000001
+        },
+        {
+          "step": 12000,
+          "tokens": 50.331648,
+          "accuracy": 0.5573
+        },
+        {
+          "step": 15000,
+          "tokens": 62.91456,
+          "accuracy": 0.5658
+        },
+        {
+          "step": 18000,
+          "tokens": 75.497472,
+          "accuracy": 0.5743
+        },
+        {
+          "step": 21000,
+          "tokens": 88.080384,
+          "accuracy": 0.5765
+        },
+        {
+          "step": 24000,
+          "tokens": 100.663296,
+          "accuracy": 0.5826
+        }
+      ]
+    },
+    {
+      "id": "Qwen3-8B-Base",
+      "family": "Qwen3",
+      "size": 8.0,
+      "variant": "Base",
+      "holdout": false,
+      "s": 0.26015125974850994,
+      "points": [
+        {
+          "step": 3000,
+          "tokens": 12.582912,
+          "accuracy": 0.5456
+        },
+        {
+          "step": 6000,
+          "tokens": 25.165824,
+          "accuracy": 0.5442
+        },
+        {
+          "step": 9000,
+          "tokens": 37.748736,
+          "accuracy": 0.5466
+        },
+        {
+          "step": 12000,
+          "tokens": 50.331648,
+          "accuracy": 0.5473
+        },
+        {
+          "step": 15000,
+          "tokens": 62.91456,
+          "accuracy": 0.5481
+        },
+        {
+          "step": 18000,
+          "tokens": 75.497472,
+          "accuracy": 0.5486
+        },
+        {
+          "step": 21000,
+          "tokens": 88.080384,
+          "accuracy": 0.5474
+        },
+        {
+          "step": 24000,
+          "tokens": 100.663296,
+          "accuracy": 0.5494
+        }
+      ]
+    },
+    {
+      "id": "gemma-2-9b-it",
+      "family": "Gemma-2",
+      "size": 9.0,
+      "variant": "Instruct",
+      "holdout": false,
+      "s": 0.18769801431314465,
+      "points": [
+        {
+          "step": 3000,
+          "tokens": 12.582912,
+          "accuracy": 0.5354
+        },
+        {
+          "step": 6000,
+          "tokens": 25.165824,
+          "accuracy": 0.5371
+        },
+        {
+          "step": 9000,
+          "tokens": 37.748736,
+          "accuracy": 0.5403
+        },
+        {
+          "step": 12000,
+          "tokens": 50.331648,
+          "accuracy": 0.5412
+        },
+        {
+          "step": 15000,
+          "tokens": 62.91456,
+          "accuracy": 0.5428999999999999
+        },
+        {
+          "step": 18000,
+          "tokens": 75.497472,
+          "accuracy": 0.5472
+        },
+        {
+          "step": 21000,
+          "tokens": 88.080384,
+          "accuracy": 0.5497
+        },
+        {
+          "step": 24000,
+          "tokens": 100.663296,
+          "accuracy": 0.5519
+        }
+      ]
+    },
+    {
+      "id": "gemma-2-9b",
+      "family": "Gemma-2",
+      "size": 9.0,
+      "variant": "Base",
+      "holdout": false,
+      "s": 0.27383343161555423,
+      "points": [
+        {
+          "step": 3000,
+          "tokens": 12.582912,
+          "accuracy": 0.5089
+        },
+        {
+          "step": 6000,
+          "tokens": 25.165824,
+          "accuracy": 0.5157
+        },
+        {
+          "step": 9000,
+          "tokens": 37.748736,
+          "accuracy": 0.5259
+        },
+        {
+          "step": 12000,
+          "tokens": 50.331648,
+          "accuracy": 0.5282
+        },
+        {
+          "step": 15000,
+          "tokens": 62.91456,
+          "accuracy": 0.5307999999999999
+        },
+        {
+          "step": 18000,
+          "tokens": 75.497472,
+          "accuracy": 0.5343
+        },
+        {
+          "step": 21000,
+          "tokens": 88.080384,
+          "accuracy": 0.542
+        },
+        {
+          "step": 24000,
+          "tokens": 100.663296,
+          "accuracy": 0.5444
+        }
+      ]
+    },
+    {
+      "id": "Falcon3-10B-Instruct",
+      "family": "Falcon3",
+      "size": 10.0,
+      "variant": "Instruct",
+      "holdout": false,
+      "s": 0.2509996442237811,
+      "points": [
+        {
+          "step": 3000,
+          "tokens": 12.582912,
+          "accuracy": 0.5428000000000001
+        },
+        {
+          "step": 6000,
+          "tokens": 25.165824,
+          "accuracy": 0.5465
+        },
+        {
+          "step": 9000,
+          "tokens": 37.748736,
+          "accuracy": 0.5578
+        },
+        {
+          "step": 12000,
+          "tokens": 50.331648,
+          "accuracy": 0.5588000000000001
+        },
+        {
+          "step": 15000,
+          "tokens": 62.91456,
+          "accuracy": 0.5623
+        },
+        {
+          "step": 18000,
+          "tokens": 75.497472,
+          "accuracy": 0.563
+        },
+        {
+          "step": 21000,
+          "tokens": 88.080384,
+          "accuracy": 0.5644
+        },
+        {
+          "step": 24000,
+          "tokens": 100.663296,
+          "accuracy": 0.5643
+        }
+      ]
+    },
+    {
+      "id": "Falcon3-10B-Base",
+      "family": "Falcon3",
+      "size": 10.0,
+      "variant": "Base",
+      "holdout": false,
+      "s": 0.18622784442450085,
+      "points": [
+        {
+          "step": 3000,
+          "tokens": 12.582912,
+          "accuracy": 0.5253
+        },
+        {
+          "step": 6000,
+          "tokens": 25.165824,
+          "accuracy": 0.5214
+        },
+        {
+          "step": 9000,
+          "tokens": 37.748736,
+          "accuracy": 0.5271
+        },
+        {
+          "step": 12000,
+          "tokens": 50.331648,
+          "accuracy": 0.5323
+        },
+        {
+          "step": 15000,
+          "tokens": 62.91456,
+          "accuracy": 0.5427000000000001
+        },
+        {
+          "step": 18000,
+          "tokens": 75.497472,
+          "accuracy": 0.5423
+        },
+        {
+          "step": 21000,
+          "tokens": 88.080384,
+          "accuracy": 0.5415
+        },
+        {
+          "step": 24000,
+          "tokens": 100.663296,
+          "accuracy": 0.5399
+        }
+      ]
+    },
+    {
+      "id": "Qwen3-30B-A3B",
+      "family": "Qwen3",
+      "size": 30.0,
+      "variant": "Instruct",
+      "holdout": false,
+      "s": 0.4704367686073056,
+      "points": [
+        {
+          "step": 3000,
+          "tokens": 12.582912,
+          "accuracy": 0.5928
+        },
+        {
+          "step": 6000,
+          "tokens": 25.165824,
+          "accuracy": 0.5976
+        },
+        {
+          "step": 9000,
+          "tokens": 37.748736,
+          "accuracy": 0.6045
+        },
+        {
+          "step": 12000,
+          "tokens": 50.331648,
+          "accuracy": 0.6078
+        },
+        {
+          "step": 15000,
+          "tokens": 62.91456,
+          "accuracy": 0.6107
+        },
+        {
+          "step": 18000,
+          "tokens": 75.497472,
+          "accuracy": 0.6181
+        },
+        {
+          "step": 21000,
+          "tokens": 88.080384,
+          "accuracy": 0.6238
+        },
+        {
+          "step": 24000,
+          "tokens": 100.663296,
+          "accuracy": 0.6277
+        }
+      ]
+    },
+    {
+      "id": "Qwen3-30B-A3B-Base",
+      "family": "Qwen3",
+      "size": 30.0,
+      "variant": "Base",
+      "holdout": false,
+      "s": 0.44376776454820277,
+      "points": [
+        {
+          "step": 3000,
+          "tokens": 12.582912,
+          "accuracy": 0.5532
+        },
+        {
+          "step": 6000,
+          "tokens": 25.165824,
+          "accuracy": 0.5582
+        },
+        {
+          "step": 9000,
+          "tokens": 37.748736,
+          "accuracy": 0.5692
+        },
+        {
+          "step": 12000,
+          "tokens": 50.331648,
+          "accuracy": 0.5794
+        },
+        {
+          "step": 15000,
+          "tokens": 62.91456,
+          "accuracy": 0.5912
+        },
+        {
+          "step": 18000,
+          "tokens": 75.497472,
+          "accuracy": 0.6003000000000001
+        },
+        {
+          "step": 21000,
+          "tokens": 88.080384,
+          "accuracy": 0.6033
+        },
+        {
+          "step": 24000,
+          "tokens": 100.663296,
+          "accuracy": 0.6032
+        }
+      ]
+    },
+    {
+      "id": "Qwen2.5-72B-Instruct",
+      "family": "Qwen2.5",
+      "size": 72.0,
+      "variant": "Instruct",
+      "holdout": true,
+      "s": 0.820579932376958,
+      "points": [
+        {
+          "step": 3000,
+          "tokens": 12.582912,
+          "accuracy": 0.6439
+        },
+        {
+          "step": 6000,
+          "tokens": 25.165824,
+          "accuracy": 0.6481
+        },
+        {
+          "step": 9000,
+          "tokens": 37.748736,
+          "accuracy": 0.6504000000000001
+        },
+        {
+          "step": 12000,
+          "tokens": 50.331648,
+          "accuracy": 0.6502
+        }
+      ]
+    },
+    {
+      "id": "Qwen2.5-72B",
+      "family": "Qwen2.5",
+      "size": 72.0,
+      "variant": "Base",
+      "holdout": true,
+      "s": 0.6626531442609847,
+      "points": [
+        {
+          "step": 3000,
+          "tokens": 12.582912,
+          "accuracy": 0.6323
+        },
+        {
+          "step": 6000,
+          "tokens": 25.165824,
+          "accuracy": 0.6369
+        },
+        {
+          "step": 9000,
+          "tokens": 37.748736,
+          "accuracy": 0.6446999999999999
+        },
+        {
+          "step": 12000,
+          "tokens": 50.331648,
+          "accuracy": 0.6484000000000001
+        }
+      ]
+    }
+  ]
+}
